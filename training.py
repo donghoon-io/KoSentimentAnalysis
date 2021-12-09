@@ -139,7 +139,7 @@ for e in range(num_epochs):
 
 # test
 
-new_test = nlp.data.TSVDataset('/content/drive/MyDrive/test.tsv', field_indices=[1,2], num_discard_samples=1)
+new_test = nlp.data.TSVDataset('test.tsv', field_indices=[1,2], num_discard_samples=1)
 test_set = BERTDataset(new_test , 0, 1, tok, max_len, True, False)
 test_input = torch.utils.data.DataLoader(test_set, batch_size=1, num_workers=4)
 
