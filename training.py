@@ -1,9 +1,5 @@
 
 # coding: utf-8
-get_ipython().system('pip install sentencepiece')
-get_ipython().system('pip install transformers')
-
-
 
 import torch
 import pandas as pd
